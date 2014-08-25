@@ -1,0 +1,35 @@
+---
+
+- name: install specific python software properties version
+  apt:
+    pkg: 'python-software-properties={{ brightbox_ruby_psp_pkg_version }}'
+    state: installed
+    update_cache: yes
+    cache_valid_time: 3600
+  when: brightbox_ruby_psp_pkg_version is defined and brightbox_ruby_psp_pkg_version
+
+- name: install current/latest python software properties version
+  apt:
+    pkg: python-software-properties
+    state: '{{ brightbox_ruby_psp_pkg_state }}'
+    update_cache: yes
+    cache_valid_time: 3600
+  when: brightbox_ruby_psp_pkg_version is not defined or not brightbox_ruby_psp_pkg_version
+
+- name: add Brightbox repository
+  apt_repository:
+    repo: '{{ brightbox_ruby_ppa_repo }}'
+    update_cache: yes
+
+- name: install Brightbox Ruby package
+  apt:
+    pkg: '{{ brightbox_ruby_pkg_version }}'
+    state: installed
+    update_cache: yes
+    cache_valid_time: 3600
+
+- name: install gems
+  gem:
+    name: item
+    state: present
+  with_items: brightbox_ruby_gems

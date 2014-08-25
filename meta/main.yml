@@ -1,0 +1,18 @@
+---
+galaxy_info:
+  author: Michaël Rigart
+  description: An ansible role for installing Ruby from the Brightbox PPA.
+  company: Netronix.be
+  license: GPLv3
+  min_ansible_version: 1.4
+  platforms:
+    - name: Ubuntu
+      versions:
+        - all
+    - name: Debian
+      versions:
+        - all
+  categories:
+    - development
+dependencies: []
+
