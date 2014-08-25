@@ -23,7 +23,7 @@ Example Playbook
 
     - hosts: servers
       roles:
-         - { role: michaelrigart.brightbox_ruby, brightbox_ruby_pkg_version: ruby2.1 }
+         - { role: michaelrigart.brightbox-ruby, brightbox_ruby_pkg_version: ruby2.1 }
 
 License
 -------
