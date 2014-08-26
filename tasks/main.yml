@@ -7,6 +7,7 @@
     update_cache: yes
     cache_valid_time: 3600
   when: brightbox_ruby_psp_pkg_version
+  tags: package
 
 - name: install current/latest python software properties version
   apt:
@@ -15,11 +16,13 @@
     update_cache: yes
     cache_valid_time: 3600
   when: not brightbox_ruby_psp_pkg_version
+  tags: package
 
 - name: add Brightbox repository
   apt_repository:
     repo: '{{ brightbox_ruby_ppa_repo }}'
     update_cache: yes
+  tags: package
 
 - name: install Brightbox Ruby package
   apt:
@@ -27,9 +30,11 @@
     state: installed
     update_cache: yes
     cache_valid_time: 3600
+  tags: package
 
 - name: install gems
   gem:
     name: item
     state: present
   with_items: brightbox_ruby_gems
+  tags: rubygems
