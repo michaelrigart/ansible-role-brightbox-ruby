@@ -6,7 +6,7 @@
     state: installed
     update_cache: yes
     cache_valid_time: 3600
-  when: brightbox_ruby_psp_pkg_version is defined and brightbox_ruby_psp_pkg_version
+  when: brightbox_ruby_psp_pkg_version
 
 - name: install current/latest python software properties version
   apt:
@@ -14,7 +14,7 @@
     state: '{{ brightbox_ruby_psp_pkg_state }}'
     update_cache: yes
     cache_valid_time: 3600
-  when: brightbox_ruby_psp_pkg_version is not defined or not brightbox_ruby_psp_pkg_version
+  when: not brightbox_ruby_psp_pkg_version
 
 - name: add Brightbox repository
   apt_repository:
