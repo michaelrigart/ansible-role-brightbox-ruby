@@ -36,5 +36,6 @@
   gem:
     name: '{{ item }}'
     state: present
+    user_install: '{{ brightbox_ruby_gem_user_install }}'
   with_items: brightbox_ruby_gems
   tags: rubygems

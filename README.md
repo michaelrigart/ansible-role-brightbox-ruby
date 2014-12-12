@@ -15,6 +15,7 @@ it will install the package as specified by the state variable
 - brightbox_ruby_pkg_version: you can specify which ruby version you which to install. Either use the short version (eg. 2.1) for the 
 latest 2.1 version, or specify the full version name (eg. ruby2.1=2.1.2-1bbox1~trusty2).
 - brightbox_ruby_gems: list that contains additional gems you wich to install.
+- brightbox_ruby_gem_user_install: define if gems need to be user installed or not. This default is set to no.
 
 View the default vars - defaults/main.yml - for a more detailed example.
 
