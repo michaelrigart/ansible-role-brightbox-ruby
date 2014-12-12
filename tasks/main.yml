@@ -34,7 +34,7 @@
 
 - name: install gems
   gem:
-    name: item
+    name: '{{ item }}'
     state: present
   with_items: brightbox_ruby_gems
   tags: rubygems
