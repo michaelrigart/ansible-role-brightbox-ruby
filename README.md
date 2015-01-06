@@ -12,8 +12,7 @@ Role Variables
 When specifying a version, the state will be forced to installed. When omitting the variable or leaving it empty
 it will install the package as specified by the state variable
 - brightbox_ruby_psp_pkg_state: indicates the python-software-properties package state; Allowed setting: installed, latest
-- brightbox_ruby_pkg_version: you can specify which ruby version you which to install. Either use the short version (eg. 2.1) for the 
-latest 2.1 version, or specify the full version name (eg. ruby2.1=2.1.2-1bbox1~trusty2).
+- brightbox_ruby_packages: list of all packages you want to install ( ruby2.2, ruby2.2-dev, ... )
 - brightbox_ruby_gems: list that contains additional gems you wich to install.
 - brightbox_ruby_gem_user_install: define if gems need to be user installed or not. This default is set to no.
 
