@@ -2,7 +2,8 @@
 
 brightbox_ruby_psp_pkg_version:
 brightbox_ruby_psp_pkg_state: installed
-brightbox_ruby_pkg_version: ruby2.1
+brightbox_ruby_packages:
+  - ruby2.2
 brightbox_ruby_gem_user_install: no
 brightbox_ruby_gems:
   - rake

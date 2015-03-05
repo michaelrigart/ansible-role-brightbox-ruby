@@ -26,10 +26,11 @@
 
 - name: install Brightbox Ruby package
   apt:
-    pkg: '{{ brightbox_ruby_pkg_version }}'
+    pkg: '{{ item }}'
     state: installed
     update_cache: yes
     cache_valid_time: 3600
+  with_items: brightbox_ruby_packages
   tags: package
 
 - name: install gems
