@@ -8,7 +8,9 @@ For more information, [visit the Brightbox Ruby page](http://brightbox.com/docs/
 Role Variables
 --------------
 
-    brightbox_ruby_psp_pkg_version: specify the specific python-software-properties version you wish to install. When specifying a version, the state will be forced to installed. When omitting the variable or leaving it empty it will install the package as specified by the state variable
+    brightbox_ruby_psp_pkg_version: specify the specific python-software-properties version you wish to install.
+      When specifying a version, the state will be forced to installed. When omitting the variable or leaving it
+      empty it will install the package as specified by the state variable
     brightbox_ruby_psp_pkg_state: indicates the python-software-properties package state; Allowed setting: installed, latest
     brightbox_ruby_packages: list of all packages you want to install ( ruby2.2, ruby2.2-dev, ... )
     brightbox_ruby_gems: list that contains additional gems you wich to install.
