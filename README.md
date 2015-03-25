@@ -1,7 +1,6 @@
 Ansible Brightbox Ruby Role
 ===========================
-
-
+[![Build Status](https://travis-ci.org/michaelrigart/ansible-role-brightbox-ruby.svg?branch=master)](https://travis-ci.org/michaelrigart/ansible-role-brightbox-ruby)
 
 An ansible role for installing the Brightbox ppa repository and installing the desired ruby version.
  
