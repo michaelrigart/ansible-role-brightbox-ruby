@@ -1,6 +1,6 @@
 Ansible Brightbox Ruby Role
 ===========================
-[![Build Status](https://semaphoreci.com/api/v1/projects/a7b651c7-834d-49c7-b68d-39230d6110aa/461776/badge.svg)](https://semaphoreci.com/michaelrigart/ansible-role-brightbox-ruby) [![Build Status](https://travis-ci.org/michaelrigart/ansible-role-brightbox-ruby.svg?branch=master)](https://travis-ci.org/michaelrigart/ansible-role-brightbox-ruby)
+[![Build Status](https://semaphoreci.com/api/v1/projects/a7b651c7-834d-49c7-b68d-39230d6110aa/461776/badge.svg)](https://semaphoreci.com/michaelrigart/ansible-role-brightbox-ruby)
 
 An ansible role for installing the Brightbox ppa repository and installing the desired ruby version.
  
