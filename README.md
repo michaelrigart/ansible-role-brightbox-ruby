@@ -25,7 +25,7 @@ Example Playbook
 ```yaml
 - hosts: servers
   roles:
-     - { role: MichaelRigart.brightbox-ruby, brightbox_ruby_pkg_version: ruby2.1, sudo: Yes }
+     - { role: MichaelRigart.brightbox-ruby, brightbox_ruby_pkg_version: ruby2.1, become: true }
 ```
 
 License
